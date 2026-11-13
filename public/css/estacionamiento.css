@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #263247;
+    background: linear-gradient(135deg, #eef4ff, #f7f9fc);
+}
+
+.contenedor {
+    max-width: 1150px;
+    margin: 35px auto;
+    padding: 0 16px;
+}
+
+h1 {
+    color: #244c9a;
+    font-weight: 700;
+}
+
+h2 {
+    color: #315fba;
+}
+
+.tarjeta {
+    background: #fff;
+    padding: 22px;
+    margin: 22px 0;
+    border-radius: 14px;
+    border-top: 4px solid #3977e8;
+    box-shadow: 0 8px 24px rgba(43, 75, 130, .10);
+}
+
+.tarjeta:nth-of-type(2n) {
+    border-top-color: #14a77a;
+}
+
+input,
+select {
+    box-sizing: border-box;
+    padding: 10px 12px;
+    margin: 5px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background: #fff;
+    color: #263247;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #9dbdff;
+    border-color: #3977e8;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 0;
+    border-radius: 7px;
+    color: #fff;
+    background: #3977e8;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s, transform .2s;
+}
+
+button:hover {
+    background: #2458c6;
+    transform: translateY(-1px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    padding: 12px 10px;
+    color: #fff;
+    background: #315fba;
+    text-align: left;
+}
+
+td {
+    padding: 11px 10px;
+    border-bottom: 1px solid #e6ebf2;
+}
+
+tbody tr:nth-child(even) {
+    background: #f3f7ff;
+}
+
+tbody tr:hover {
+    background: #e7f2ff;
+}
+
+.mensaje {
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #146c43;
+    background: #dff5e9;
+    border-left: 4px solid #18a66a;
+}
+
+.error {
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #9f2635;
+    background: #fde8eb;
+    border-left: 4px solid #d64555;
+}
+
+details summary {
+    color: #315fba;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+a {
+    color: #315fba;
+}
+
+@media (max-width: 700px) {
+    .contenedor {
+        margin: 18px auto;
+        padding: 0 10px;
+    }
+
+    .tarjeta {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    input,
+    select {
+        max-width: 100%;
+    }
+}

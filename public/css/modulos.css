@@ -1,0 +1,106 @@
+/* Color común y color de acento según el módulo */
+body[data-modulo] {
+    --color-modulo: #3977e8;
+    --fondo-modulo: #eef4ff;
+    background: linear-gradient(135deg, var(--fondo-modulo), #f8faff);
+    color: #263247;
+}
+
+body[data-modulo="clientes"] {
+    --color-modulo: #3977e8;
+    --fondo-modulo: #eef4ff;
+}
+
+body[data-modulo="vehiculos"] {
+    --color-modulo: #8055d9;
+    --fondo-modulo: #f3efff;
+}
+
+body[data-modulo="espacios"] {
+    --color-modulo: #14966c;
+    --fondo-modulo: #eaf8f1;
+}
+
+body[data-modulo="estacionamientos"] {
+    --color-modulo: #db8b16;
+    --fondo-modulo: #fff6e8;
+}
+
+body[data-modulo="pagos"] {
+    --color-modulo: #078b9a;
+    --fondo-modulo: #e9f8fa;
+}
+
+body[data-modulo="membresias"] {
+    --color-modulo: #cf4d7e;
+    --fondo-modulo: #fff0f5;
+}
+
+body[data-modulo="usuarios"] {
+    --color-modulo: #d04e45;
+    --fondo-modulo: #fff0ee;
+}
+
+body[data-modulo] h1,
+body[data-modulo] h2 {
+    color: var(--color-modulo);
+}
+
+body[data-modulo] .tarjeta {
+    border-top: 4px solid var(--color-modulo);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(38, 50, 71, .09);
+}
+
+body[data-modulo] th {
+    background: var(--color-modulo);
+    color: #fff;
+}
+
+body[data-modulo] button {
+    border: 0;
+    border-radius: 7px;
+    background: var(--color-modulo);
+    color: #fff;
+    font-weight: 600;
+}
+
+body[data-modulo] button:hover {
+    filter: brightness(.9);
+}
+
+body[data-modulo] input:focus,
+body[data-modulo] select:focus {
+    outline: 2px solid var(--color-modulo);
+    outline-offset: 1px;
+}
+
+body[data-modulo] a {
+    color: var(--color-modulo);
+}
+
+body[data-modulo] .mensaje {
+    padding: 12px;
+    border-left: 4px solid #168453;
+    border-radius: 6px;
+    background: #e7f7ef;
+    color: #146c43;
+}
+
+body[data-modulo] .error {
+    padding: 12px;
+    border-left: 4px solid #c0394b;
+    border-radius: 6px;
+    background: #fde8eb;
+    color: #9f2635;
+}
+
+@media (max-width: 700px) {
+    body[data-modulo] {
+        margin: 12px;
+    }
+
+    body[data-modulo] .tarjeta {
+        overflow-x: auto;
+    }
+}
